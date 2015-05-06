@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lunatic Sugar :: Gallery</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
+	
+	<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> -->
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.masonry.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+	    // options
+	    var $gallery = $('#gallery');
+		$gallery.imagesLoaded( function(){
+		  $gallery.masonry({
+		    itemSelector : '.item',
+		    columnWidth : 4
+		  });
+		});
+	});
+	</script>
+
+</head>
+<body>
+<div id="container">
+	<header>
+		<div id="logo">
+			<a href="index.html"><img src="img/logo.png" alt="Lunatic Sugar Logo" ></a>
+			<h1>Lunatic Sugar</h1>
+		</div>
+
+		<nav id="nav-main" >
+			<ul>
+				<li><a href="index.html">home</a></li>
+				<li><a href="about.html">about</a></li>
+				<li class="current"><a href="gallery.html">gallery</a></li>
+				<li><a href="destinations.html">destinations</a></li>
+				<li><a href="contact.html">contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="contents">
+		<div id="tags">
+			<ul>
+				<li><a href="#">#tohou</a></li>
+				<li><a href="#">#anime</a></li>
+				<li><a href="#">#sakura-con</a></li>
+				<li><a href="#">#fanime</a></li>
+				<li><a href="#">#nature</a></li>
+				<li><a href="#">#fireworks</a></li>
+				<li><a href="#">#figures</a></li>
+				<li><a href="#">#cosplay</a></li>
+				<li><a href="#">#convention</a></li>
+			</ul>
+		</div>
+		<div id="gallery">
+		<a href="page01.html"><img src="img/thumb-01.jpg" alt="" class="item"> </a>
+		<a href="page02.html"><img src="img/thumb-02.jpg" alt="" class="item"> </a>
+		<a href="page03.html"><img src="img/thumb-03.jpg" alt="" class="item"> </a>
+		<a href="page04.html"><img src="img/thumb-04.jpg" alt="" class="item"> </a>
+		<a href="page05.html"><img src="img/thumb-05.jpg" alt="" class="item"> </a>
+		<a href="page06.html"><img src="img/thumb-06.jpg" alt="" class="item"> </a>
+		<a href="page07.html"><img src="img/thumb-07.jpg" alt="" class="item"> </a>
+		</div>
+	</div>
+	<footer>
+		<ul>
+			<li>all work © 2013 lunatic sugar</li>
+			<li>design © 2013 n.nedev </li>
+			<li><a href="">sitemap</a></li>
+		</ul>
+		<a href="http://validator.w3.org/check?uri=referer">
+			<img src="http://www.w3.org/html/logo/badge/html5-badge-h-solo.png" width="31" height="32" alt="valid HTML5">
+		</a>
+		<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+			<img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS3" height="31" width="88">
+		</a>
+	</footer>
+</div>	
+</body>
+</html>

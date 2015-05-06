@@ -1,0 +1,519 @@
+/*
+
+sdffd
+Theme Name: WP Test Theme
+Theme URI: nickneden.com/WEB170/wordpress
+Author: the Nick Nedev
+Author URI: nicknedev.com
+Description: This is the first test theme
+Version: 1.0
+
+*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*-----------------END RESET---------------*/
+#logo h1{
+	display: none;
+}
+
+/*------------------GLOBAL STYLES------------*/
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: #ffffff;
+	color: #999999;
+	}
+
+#container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 20px 20px;
+}
+a {
+	text-decoration: none;
+	color: #9ac23b;
+}
+a:hover,
+a:focus {
+		text-decoration: underline;
+
+}
+p { 
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: 300;
+}
+
+
+form {
+	float: left;
+	background-color: #f2f2f2;
+	padding: 0 30px 30px 30px;
+}
+label {
+	display: block;	
+	font-size: 14px;
+	margin: 18px 0;
+	text-transform: uppercase;
+	color: #666666;
+	width: 254px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+	background-color: #fff;
+	display: block;
+	border: 1px solid #dddddd;
+	font-size: 14px;
+	padding: 6px;
+	margin: 6px 0 12px;
+	width: 300px;
+	font-weight: 300;
+}
+
+textarea {
+	width: 400px;
+	height: 180px;
+}
+select { 
+	width: 318px;
+	height: 32px;
+	border: 1px solid #dddddd;
+	margin: 6px 0 12px;
+	}
+
+input[type="submit"] {
+	width: 318px;
+	height: 36px;
+	margin-top: 10px;
+	background: #9ac23b;
+	background: -moz-linear-gradient(top, #9ac23b 0%, #84a632 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9ac23b), color-stop(100%,#84a632));
+	background: -webkit-linear-gradient(top, #9ac23b 0%,#84a632 100%);
+    background: -o-linear-gradient(top, #9ac23b 0%,#84a632 100%);
+    background: -ms-linear-gradient(top, #9ac23b 0%,#84a632 100%);
+    background: linear-gradient(to bottom, #9ac23b 0%,#84a632 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ac23b', endColorstr='#84a632',GradientType=0 );
+	border: 1px solid #6A8528;
+	border-radius: 3px;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: 13px;
+	text-shadow: #6A8528 1px 1px 1px;
+	cursor: pointer;
+}
+input[type="submit"]:hover {
+	background: #84a632;
+	background: -moz-linear-gradient(top, #84a632 0%, #78932d 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#84a632), color-stop(100%,#78932d));
+	background: -webkit-linear-gradient(top, #84a632 0%,#78932d 100%);
+    background: -o-linear-gradient(top, #84a632 0%,#78932d 100%);
+    background: -ms-linear-gradient(top, #84a632 0%,#78932d 100%);
+    background: linear-gradient(to bottom, #84a632 0%,#78932d 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#84a632', endColorstr='#78932d',GradientType=0 );
+}
+
+.left-column {
+	width: 415px;
+	float: left;
+	padding-bottom: 45px;
+}
+
+.right-column {
+	width: 475px;
+	float: right;
+	padding-bottom:  45px;
+}
+
+.back-top {
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #9ac23b;
+	float: left;
+	margin: 6px 6px 0 0;
+}
+/*-------------------END GLOBAL STYLES----------*/
+
+#logo {
+	float: left;
+}
+
+
+/*---------------MAIN NAV STYLES----------------*/
+
+#nav-main {
+	
+	float: right;
+	border-bottom: 1px solid #dddddd;
+}
+#nav-main ul {
+	text-align: center;
+	
+}
+#nav-main ul li {
+	list-style-type: none;
+	padding: 20px;
+	float: left;
+	border-top: 3px solid #ffffff;
+}
+#nav-main ul li a {
+	display: block;
+	text-decoration: none;
+	color: #999999;
+	font-weight: 600;
+	font-size: 18px;		
+}
+#nav-main ul li a:hover,
+#nav-main ul li a:focus{
+	color: #9ac23b;
+}
+#nav-main ul li.current {
+	border-top: 3px solid #9ac23b;
+
+}
+/*----------------------------*/
+
+/*--------SUB-NAV STYLES-------*/
+#sub-nav{
+	clear: both;
+	height: 50px;
+	padding: 30px 0 20px 0;
+	font-size: 18px;
+	line-height: 36px;
+	font-weight: bold;
+}
+#sub-nav p {
+	padding: 0 220px 0 0 ;
+	display: block;
+	float: left;
+}
+#sub-nav a {
+	color: #999999;
+}
+#contents {
+	clear: both;
+	padding: 30px 0px;
+}
+#contents img {
+	display: block;
+	float: left;
+	padding-right: 15px;
+}
+
+#faq {
+	
+}
+#faq h2 {
+	font-size: 24px;
+	color: #9ac23b;
+	padding: 48px 0 18px;
+	margin-bottom: 18px;
+	text-transform: uppercase;
+	border-bottom: 1px solid #dddddd;
+}
+#faq h3 {
+	font-size: 18px;
+	padding-bottom: 9px;
+}
+#faq p {
+	padding-bottom: 24px;
+	display: block;
+	clear: both;
+} 
+/*#content img:last-child{
+	padding: 0;
+*/
+#imgleft{
+float: left;
+}
+
+.contents-home p {
+	padding: 35px 120px 35px 240px;
+}
+.highlight {
+	display: block;
+	clear: both;
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 300;
+}
+
+#inforight{
+	width: 380px;
+	float: right;
+}
+#inforight img{
+	padding-bottom: 40px;
+}
+#inforight h2{
+	
+	font-size: 28px;
+	color: #9ac23b;
+	padding-bottom: 30px;
+}
+#inforight h3{
+	font-size: 12px;
+	line-height: 18px;
+}
+#inforight p {
+	padding: 0;
+	margin-top: 40px;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 300;
+}
+#inforight a {
+	color: #999999;
+	margin-top: 25px;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 36px;
+}
+#tags {
+	width: 210px;
+	float: left;
+	border-top: 1px dotted #9ac23b;
+	padding-top: 12px;
+}
+#tags a {
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: 300;
+	color: #999999;
+}
+#tags a:hover {
+	text-decoration: none;
+	color: #9ac23b;
+}
+
+#gallery {
+	width: 710px;
+	float: right;
+	margin-bottom: 45px;
+}
+#conventions h2 {
+	text-transform: uppercase;
+	padding: 12px 0;
+	border-bottom: 3px solid #9ac23b;
+	margin-bottom: 12px;
+	color: #9ac23b;
+	font-weight: 600;
+}
+#conventions h3 {
+	font-size: 21px;
+	line-height: 28px;
+	font-weight: 300;
+	color: #333333;
+}
+.location {
+	color: #999999;
+}
+
+.convention {
+	padding-bottom: 24px;
+	margin-bottom: 24px;
+	border-bottom: 1px dotted #999999;
+}
+
+#thanks {
+	padding: 80px 0 160px;
+}
+
+footer {
+	display: block;
+	clear: both;
+	font-size: 12px;
+	line-height: 52px;
+	border-top: 1px dotted #999999;
+	margin:80px 0 0 0;
+}
+footer ul {
+	float: right;
+}
+footer li {
+	display: inline-block; 
+	padding-right: 12px;
+}
+footer img {
+	vertical-align: text-top;
+}
+
+
+
+
+
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+/*Hacks*/
+
+/*Selects the children elements of the Navigation menu and makes them invisible*/
+/*.main-menu-items > * {
+	display: none;
+
+	
+	}*/
+
+.menu-item-has-children > * {
+	display: none
+}
+.show{
+	display: block;
+	color: red;
+}
