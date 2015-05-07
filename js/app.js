@@ -17,12 +17,15 @@
 //         });
 // });
 
-$(document).ready(function(){
-console.log('yai');
+$(document).ready(function() {
+    console.log('yai');
 
-$('.menu-item-has-children li').hover(
-                                      function(){
-                                      	console.log('hover');
-                                      	$('.sub-menu', this).stop().slideDown();
-                                      });	
+    $(function(){
+    $(".menu-item-has-children").hover(function(){
+             $(this).children("ul").stop().fadeIn("slow");
+       },
+       function(){
+             $(this).children("ul").stop().fadeOut("slow");   
+    })
+})
 });

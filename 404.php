@@ -3,16 +3,15 @@
 		<div id="contents">
 
 	<!-- Start the loop -->
-		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-			
+
 			<h2><a href="<?php the_permalink();?>"><?php the_title( ); ?></h2></a>
 
-	 	<p>	<?php the_content( ); ?> </p>
+<h2>There is nothing here, you might wanna try this search here</h2>
 
 	<!-- End the loop -->
-		<?php endwhile; endif;  ?>
+<?php get_search_form( ); ?>
 
-<small>index.php</small>
+<small>404.php</small>
 <?php get_sidebar( ); ?>
 
  

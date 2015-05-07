@@ -5,14 +5,15 @@
 	<!-- Start the loop -->
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			
-			<h2><a href="<?php the_permalink();?>"><?php the_title( ); ?></h2></a>
+			<h2><?php the_title( ); ?></h2>
+			<small>The thingie goes in here</small>
 
 	 	<p>	<?php the_content( ); ?> </p>
 
 	<!-- End the loop -->
 		<?php endwhile; endif;  ?>
 
-<small>index.php</small>
+<small>single.php</small>
 <?php get_sidebar( ); ?>
 
  

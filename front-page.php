@@ -12,7 +12,7 @@
 	<!-- End the loop -->
 		<?php endwhile; endif;  ?>
 
-<small>index.php</small>
+<small>front-page.php</small>
 <?php get_sidebar( ); ?>
 
  
