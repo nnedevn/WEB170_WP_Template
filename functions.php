@@ -13,6 +13,9 @@ register_nav_menus( array(
                   'nav-main'=>__( 'Main Nav' ),
                   ) );
 
-//
+
+// Add thumbnail support
+ add_theme_support( 'post-thumbnails' ); 
+
 
  ?>
