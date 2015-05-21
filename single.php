@@ -7,6 +7,7 @@
 			
 			<h2><?php the_title( ); ?></h2>
 			<small>The thingie goes in here</small>
+			<?php get_the_post_thumbnail( $post_id, 'large'); ?>
 
 	 	<p>	<?php the_content( ); ?> </p>
 

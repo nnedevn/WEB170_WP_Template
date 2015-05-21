@@ -3,6 +3,7 @@
 			<li>all work © 2013 lunatic sugar</li>
 			<li>design © 2013 n.nedev </li>
 			<li><a href="">sitemap</a></li>
+			<li><?php wp_loginout( ); ?></li>
 		</ul>
 		
 	</footer>

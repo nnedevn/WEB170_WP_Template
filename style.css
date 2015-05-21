@@ -519,35 +519,18 @@ a img.aligncenter {
 }
 
 
-/* HIGHLY EXPERIMETALFlex magic
-This Css directly interfears with app.js!!!! flexbox comes from here, 
-visibility is controled in app.js. 
-TODO: Figure out the CSS menu or just do JS. 
-*/
-
-#nav-main{
-	display: flex;
-	flex-direction: row;
-
-	flex-direction: column;
-/*		width: 80%;*/
-/*	height: 750px;
-	border: 10px solid black;*/
-	/*margin: 0 auto;*/
-	flex-wrap: wrap;
-
+#four-posts{
+	width: 30%;
+	clear: both;
 }
 
-#nav-main > ul > li:hover{
-
+#four-posts > li{
+	display: inline-table;
+	/*color:red; */
 }
 
-#nav-main > ul > li a + ul {
-	display:none;
-
+#contents article.post-excerpt{
+	overflow: hidden;
+	margin-bottom: 10px;
+	
 }
-
-#nav-main > ul > li:hover a + ul {
-					display: flex;
-
-				}
