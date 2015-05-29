@@ -1,8 +1,7 @@
-<small>sidebar.php</small>
 
-<div id="sidebar">
 
-<!-- This is where the rest of the navigation will go -->
+<h1>DO I HAVE A FUCKING SIDEBAR</h1>
+<div id='sidebar'>
 
 <!-- Begins sub-navigation -->
 
@@ -43,17 +42,15 @@ if ($post->post_parent) {
 
 </ul>	
 
+<h1>THIS IS WHERE THE QUOTES SHOULD GO</h1>
+<?php echo get_the_id(); ?>
+<?php echo get_post_meta( ); ?>
+<?php if (get_post_meta( get_the_ID(), 'Quote', true )): ?>
+       <blockquote> <?php echo get_post_meta($post->ID, 'Quote', true ); ?></blockquote>
+       <h1> this appears when there is a blockquote</h1>
 <?php endif ?>
 
-
-
-
-<!-- Block quote section -->
-<?php if (get_post_meta(get_the_id(), 'Quote', true)): ?>
-
-	<blockquote><?php echo get_post_meta($post->ID, 'Quote', true); ?></blockquote>
-
 <?php endif ?>
-<!-- End of blockquote section -->
 
-</div> <!-- End sidebar -->
+</div>
+<!-- Sidebar Ends

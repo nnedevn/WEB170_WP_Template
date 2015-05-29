@@ -510,6 +510,18 @@ a img.aligncenter {
 	
 	}*/
 
+blockquote {
+	font-style: italic;
+	
+
+	color: #383838;
+	background: #eee;
+	z-index: 0;
+}
+
+
+
+
 .menu-item-has-children > * {
 	display: none
 }
