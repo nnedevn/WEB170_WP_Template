@@ -540,8 +540,29 @@ blockquote {
 	/*color:red; */
 }
 
+#contents {
+	width: 730px;
+	padding: 0 30px 0 0;
+	display: block;
+	float:left;
+}
+
+#sidebar {
+	width: 140px;
+	display: block;
+	float:left;
+	background-color: #f0f0f0;
+	padding: 20px;
+	margin: 60px 0 0 0;
+}
+
 #contents article.post-excerpt{
 	overflow: hidden;
 	margin-bottom: 10px;
 	
+}
+.categories ul li, #calendar-3 h2 {
+	list-style: none;
+	text-transform: uppercase;
+	padding: 5px 0;
 }

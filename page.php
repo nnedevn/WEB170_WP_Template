@@ -14,9 +14,9 @@
 <?php endif; ?> 
 
 <small>page.php</small>
-<h1>thi is where the sidebar</h1>
-<?php get_sidebar( ); ?>
+<h1>this is where the sidebar</h1>
+
  
 	</div>
-
+  <?php get_sidebar( ); ?>
 	<?php get_footer( ); ?>
