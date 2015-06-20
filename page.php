@@ -13,9 +13,8 @@
 <!-- no posts found -->
 <?php endif; ?> 
 
-
 <small>page.php</small>
-<h1>thi is where the sidebar starts from the page file</h1>
+<h1>thi is where the sidebar</h1>
 <?php get_sidebar( ); ?>
  
 	</div>

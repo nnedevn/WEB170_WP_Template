@@ -45,7 +45,8 @@ if ($post->post_parent) {
 
 <?php endif ?>
 
-
+<!-- Insert the dynamic sidebar -->
+<?php dynamic_sidebar('Main Sidebar'); ?>
 
 
 <!-- Block quote section -->

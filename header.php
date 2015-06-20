@@ -2,9 +2,11 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title><?php bloginfo('description' ); ?> | <?php bloginfo('name' ); ?></title>
+		<title><?php get_the_title_tag(); ?></title>
+		
+		<meta name="description" content="<?php echo get_the_excerpt(); ?>">
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url');?>">
+		<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url');?>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.11.3.js"></script>
 		<!-- Start WP head-->
 		<?php wp_head(); ?>
